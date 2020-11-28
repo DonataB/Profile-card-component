@@ -1,0 +1,154 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+:root {
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 100%;
+    display: flex;
+}
+
+body{
+    background-color: var(--DarkCyan);
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    width: auto;
+    background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -600px left -730px, bottom -450px right -720px;    
+    overflow: hidden;
+}
+    
+.card{
+    background-color: #fff;
+    width: 350px;
+    height: 375px;
+    margin: 140px auto;
+    padding: 0px;
+    border-radius: 20px;
+    
+}
+.topcard{
+    background: url("/images/bg-pattern-card.svg") center no-repeat;
+    height: 130px;
+    border-radius: 20px 20px 0 0;
+}
+.profile-avatar{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.profile-avatar img{
+    border-radius: 60px;
+    border: 5px solid #fff;
+    margin: -50px auto 0 auto;
+}
+.name {
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--VeryDarkDesaturatedBlue);
+    letter-spacing: 1px;
+}
+.age, .location {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%); 
+}
+.location{
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.statistic{
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 10px;
+    margin-top: 25px;
+}
+.followers span{
+    font-weight: 700;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.likes span {
+    font-weight: 700;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.photos span{
+    font-weight: 700;
+    color: var(--VeryDarkDesaturatedBlue);
+}
+.followers p{
+    color: var(--grayish-blue);
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.likes p{
+    color: var(--grayish-blue);
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.photos p{
+    color: var(--grayish-blue);
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.attribution{
+    font-size: 10px;
+    text-align: right;
+    margin-top: 40%;
+    color: var(--grayish-blue);
+}
+@media only screen and (min-width: 1440px){
+    body{
+        background-position: top -500px left -280px, bottom -65px right -200px;
+        background-image: url("./images/bg-pattern-top.svg"),
+         url("./images/bg-pattern-bottom.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: top -490px left -300px, bottom -490px right -220px;    
+        overflow: hidden;
+        height: 820px;
+     }
+}
+
