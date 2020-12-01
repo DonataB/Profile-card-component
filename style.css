@@ -142,7 +142,6 @@ body{
 }
 @media only screen and (min-width: 1440px){
     body{
-        background-position: top -500px left -280px, bottom -65px right -200px;
         background-image: url("./images/bg-pattern-top.svg"),
          url("./images/bg-pattern-bottom.svg");
         background-repeat: no-repeat, no-repeat;
