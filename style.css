@@ -140,7 +140,15 @@ body{
     margin-top: 40%;
     color: var(--grayish-blue);
 }
-@media only screen and (min-width: 1440px){
+@media all and (min-width: 700px){
+    body{
+        
+        background-position: top -490px left -600px, 
+        bottom -430px right -420px;    
+
+     }
+}
+@media all and (min-width: 1440px){
     body{
         background-image: url("./images/bg-pattern-top.svg"),
          url("./images/bg-pattern-bottom.svg");
